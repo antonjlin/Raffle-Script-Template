@@ -52,17 +52,3 @@ def generateEmails(username, domain):
 		global emails
 		emails.append(email)
 		print(emails)
-
-
-
-userEmail = input('email: ')
-username,domain = userEmail.split('@')
-if 'gmail' in userEmail:
-	gmail = True
-	generateEmails(username,domain)
-else:
-	gmail = False
-nearestID = input('nearest store ID ')
-zipCode = input('zip ')
-firstName = input('first name ')
-lastName = input('last name ')
